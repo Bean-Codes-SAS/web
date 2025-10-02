@@ -648,6 +648,10 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .navbar-brand img {
+                height: 35px;
+            }
+
             .masthead h1 {
                 font-size: 2.5rem;
             }
@@ -663,6 +667,48 @@
             .tech-grid {
                 grid-template-columns: 1fr;
             }
+
+            /* About section feature cards on mobile */
+            #about .col-lg-6 > .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #about .col-6.mb-3 {
+                display: flex;
+                min-height: 85px;
+            }
+
+            #about .d-flex.align-items-center {
+                padding: 0.5rem !important;
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+            }
+
+            #about .d-flex.align-items-center i {
+                font-size: 1.3rem !important;
+                margin-right: 0.4rem !important;
+                flex-shrink: 0;
+            }
+
+            #about .d-flex.align-items-center h6 {
+                font-size: 0.85rem;
+                margin-bottom: 0.2rem !important;
+            }
+
+            #about .d-flex.align-items-center small {
+                font-size: 0.85rem;
+                line-height: 1.1;
+            }
+        }
+
+        /* Fix for navbar on mobile */
+        .navbar > .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
         }
 
         /* Background alternatives */
@@ -785,7 +831,7 @@
             <div class="col-lg-6 mb-4" data-aos="fade-right">
                 <p class="lead mb-4">En <strong>Bean Codes</strong>, formamos equipos especializados para cada proyecto,
                     integrando a los mejores profesionales en cada disciplina.</p>
-                <p class="mb-4">NNuestro enfoque boutique garantiza <strong>talento senior de primer nivel</strong>,
+                <p class="mb-4">Nuestro enfoque boutique garantiza <strong>talento senior de primer nivel</strong>,
                     con la agilidad y eficiencia que su empresa necesita.</p>
                 <p class="mb-0">Combinamos <strong>líderes técnicos con más de 10 años de experiencia</strong>, desarrolladores senior
                     altamente especializados y project managers expertos en entregar proyectos complejos de manera exitosa.</p>
@@ -1216,7 +1262,7 @@
                         Soporte integral de ecosistema tecnológico multi-plataforma: App móvil, Angular, Electron,
                         Flutter Web.
                         <br><br>
-                        <strong>Resultado:</strong> MMantenimiento y evolución continua con nuevas funcionalidades,
+                        <strong>Resultado:</strong> Mantenimiento y evolución continua con nuevas funcionalidades,
                         logrando 100% de entregas puntuales..
                     </p>
                 </div>
@@ -1259,7 +1305,7 @@
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="section-title" data-aos="fade-up">Iniciemos Su Proyecto con Excelencia Técnica</h2>
-            <p class="section-subtitle text-white-50" data-aos="fade-up" data-aos-delay="100">Cada proyecto inicia con
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Cada proyecto inicia con
                 análisis arquitectural profundo y metodología probada. Transformemos su idea en una solución digital
                 excepcional.</p>
         </div>
